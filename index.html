@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Safe Heart</title>
+  <meta name="description" content="Safe Heart: heartbreak support, community, content, and live conversations.">
+  <meta name="theme-color" content="#C2292E">
+  <meta name="referrer" content="no-referrer">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Safe Heart">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top" aria-label="Safe Heart home">
+        <img src="icons/logo.png" alt="Safe Heart Insurance" height="46" style="height:46px;width:auto">
+      </a>
+      <button id="installBtn" class="install-btn" hidden>Install app</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HOME -->
+    <section id="top" class="hero">
+      <div class="wrap">
+        <p class="eyebrow">Heartbreak support</p>
+        <h1>You don&rsquo;t have to carry it alone.</h1>
+        <p class="lead">Safe Heart is a place for people dealing with heartbreak to find support, community, content, and live conversations.</p>
+
+        <nav class="actions" aria-label="What would you like to do?">
+          <a id="claimBtn" class="action action-primary" href="#" target="_blank" rel="noopener noreferrer">
+            <span class="action-icon" aria-hidden="true">&#9998;</span>
+            <span class="action-text">
+              <strong>File a Claim</strong>
+              <small>Tell us what happened</small>
+            </span>
+            <span class="action-arrow" aria-hidden="true">&rsaquo;</span>
+          </a>
+          <a class="action" href="#shows">
+            <span class="action-icon" aria-hidden="true">&#9733;</span>
+            <span class="action-text">
+              <strong>Attend a Safe Heart Show</strong>
+              <small>See upcoming shows and RSVP</small>
+            </span>
+            <span class="action-arrow" aria-hidden="true">&rsaquo;</span>
+          </a>
+          <a class="action" href="#story">
+            <span class="action-icon" aria-hidden="true">&#10084;</span>
+            <span class="action-text">
+              <strong>Share Your Story</strong>
+              <small>Private by default</small>
+            </span>
+            <span class="action-arrow" aria-hidden="true">&rsaquo;</span>
+          </a>
+        </nav>
+        <p id="claimNote" class="small-note">The claim form opens in a new window.</p>
+      </div>
+    </section>
+
+    <!-- SHOWS -->
+    <section id="shows" class="block">
+      <div class="wrap">
+        <h2>Upcoming shows</h2>
+        <div id="showList" class="show-list" aria-live="polite">
+          <p class="muted">Loading shows&hellip;</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section id="story" class="block block-gray">
+      <div class="wrap">
+        <h2>Share your story</h2>
+        <p>Your story is <strong>private</strong>. It goes only to the Safe Heart team and is never posted automatically.</p>
+        <ul class="checks">
+          <li>You can leave your name off.</li>
+          <li>There&rsquo;s a separate, optional box if you&rsquo;re open to Safe Heart contacting you about sharing your story. Leave it unchecked and no one will reach out about it.</li>
+          <li>Please leave out other people&rsquo;s full names, addresses, and other private details.</li>
+        </ul>
+        <a id="storyBtn" class="btn btn-red" href="#" target="_blank" rel="noopener noreferrer">Open the story form</a>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section id="privacy" class="block">
+      <div class="wrap">
+        <h2>Where your answers go</h2>
+        <dl class="privacy">
+          <dt>Claims</dt>
+          <dd>Go to Safe Heart&rsquo;s private Jotform account. Only the Safe Heart team can see them.</dd>
+          <dt>Show sign-ups and stories</dt>
+          <dd>Go to Safe Heart&rsquo;s private Google Forms. Only the Safe Heart team can see them. They are not public and are not shown in this app.</dd>
+          <dt>This app</dt>
+          <dd>No accounts, no ads, no tracking, and no cookies. The app doesn&rsquo;t save anything you type. The forms are run by Jotform and Google, and their privacy policies apply to what you send through them.</dd>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CARE NOTE -->
+    <section class="block block-black">
+      <div class="wrap">
+        <p class="care">Safe Heart isn&rsquo;t a crisis service. If you&rsquo;re in danger or thinking about hurting yourself, call or text <a href="tel:988">988</a> (US).</p>
+      </div>
+    </section>
+
+    <!-- INSTALL HELP -->
+    <section id="install" class="block">
+      <div class="wrap">
+        <h2>Add Safe Heart to your phone</h2>
+        <div class="install-grid">
+          <div class="card">
+            <h3>iPhone</h3>
+            <ol>
+              <li>Open this page in <strong>Safari</strong>.</li>
+              <li>Tap the <strong>Share</strong> button (square with an arrow).</li>
+              <li>Tap <strong>Add to Home Screen</strong>, then <strong>Add</strong>.</li>
+            </ol>
+          </div>
+          <div class="card">
+            <h3>Android</h3>
+            <ol>
+              <li>Open this page in <strong>Chrome</strong>.</li>
+              <li>Tap the <strong>&#8942;</strong> menu (top right).</li>
+              <li>Tap <strong>Add to Home screen</strong> or <strong>Install app</strong>.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; <span id="year"></span> Safe Heart &middot; <a href="https://www.maronziomvance.com/safeheart" target="_blank" rel="noopener noreferrer">maronziomvance.com/safeheart</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
