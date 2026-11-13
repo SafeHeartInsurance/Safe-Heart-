@@ -1,0 +1,13 @@
+{
+  "shows": [
+    {
+      "name": "Your show name here",
+      "date": "2026-12-31",
+      "time": "7:30 PM",
+      "location": "Venue name, street address, city",
+      "rsvpUrl": "",
+      "notes": "Optional: one short line about the show.",
+      "draft": true
+    }
+  ]
+}
